@@ -10,6 +10,7 @@ public class Expense {
     private Long id;
     private Instant expenseDate;
     private String description;
+    private String location;
     private Category category;
     private User user;
 
@@ -39,6 +40,15 @@ public class Expense {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     @ManyToOne
     public Category getCategory() {
         return category;
